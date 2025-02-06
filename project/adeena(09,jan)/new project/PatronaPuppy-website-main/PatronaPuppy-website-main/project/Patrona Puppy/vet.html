@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>PATRONA PUPPY</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo.png">
+
+    <!-- Core Stylesheet -->
+    <link href="style2.css" rel="stylesheet">
+    <link href="style_index.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <!-- <link href="style22.css" rel="stylesheet"> -->
+    <!-- Responsive CSS -->
+    <link href="css/responsive/responsive.css" rel="stylesheet">
+   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+       
+   
+    <style>
+         body{
+             background-color: #363535a4;
+         }
+.blink{
+    color:bisque;
+    text-decoration: underline
+}
+@media 
+only screen and (max-width: 1000px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+   /* Force table to not be like tables anymore */
+   table, thead, tbody, th, td, tr { 
+       display: block; 
+   }
+   
+   /* Hide table headers (but not display: none;, for accessibility) */
+   thead tr { 
+       position: absolute;
+       top: -9999px;
+       left: -9999px;
+   }
+}
+    </style>
+</head>
+<body>
+     <!-- ***** Search Form Area ***** -->
+     <div class="caviar-search-form d-flex align-items-center">
+           <div class="container">
+               <div class="row">
+                   <div class="col-12">
+                       <div class="search-close-btn" id="closeBtn">
+                           <i class="pe-7s-close-circle" aria-hidden="true"></i>
+                       </div>
+                       <form action="#" method="get">
+                           <input type="search" name="caviarSearch" id="search" placeholder="Search Here anything...">
+                           <input type="submit" class="d-none" value="submit">
+                       </form>
+                   </div>
+               </div>
+           </div>
+       </div>
+   
+       <!-- ***** Header Area Start ***** -->
+       <header class="header_area" id="header">
+           <div class="container h-100">
+               <div class="row h-100">
+                   <div class="col-12 h-100">
+                       <nav class="h-100 navbar navbar-expand-lg align-items-center">
+                           <a class="navbar-brand" href="index.html"><img src="logo.png" alt="" width="100px">PATRONA PUPPY</a>
+                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#caviarNav" aria-controls="caviarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
+                           <div class="collapse navbar-collapse" id="caviarNav">
+                               <ul class="navbar-nav ml-auto" id="caviarMenu">
+                                   <li class="nav-item active">
+                                       <a class="nav-link" href="index.html">Home</a>
+                                   </li>
+                                   <li class="nav-item">
+                                       <a class="nav-link" href="#about">About Us</a>
+                                   </li>
+
+                                   <li class="nav-item">
+                                       <a class="nav-link" href="#blogs">Blogs</a>
+                                   </li>
+                                   <li class="nav-item">
+                                           <a class="nav-link" href="#breed">Popular Breeeds</a>
+                                   </li>
+                                   <li class="nav-item">
+                                       <a class="nav-link" href="gallery.html">Gallery</a>
+                               </li>
+                                   <li class="nav-item">
+                                       <a class="nav-link" href="FAQ.html">FAQ</a>
+                               </li>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link" href="vet.html">vet</a>
+                       </li>
+                                  
+                                   <li class="nav-item dropdown">
+                                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Breeds</a>
+                                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                           <a class="dropdown-item" href="beagle.html">Beagle</a>
+                                           <a class="dropdown-item" href="nutritiongerman.html">German Shepherd</a>
+                                           <a class="dropdown-item" href="nutritionlab.html">Labrador Retriever</a>
+                                           <a class="dropdown-item" href="nutritiongolden.html">Golden Retriever</a>
+                                           <a class="dropdown-item" href="nutritionpug.html">Pug</a>
+                                           <a class="dropdown-item" href="nutritionsamoyed.html">Samoyed</a>
+                                           <a class="dropdown-item" href="nutritionwhoodle.html">Whoodle</a>
+                                           <a class="dropdown-item" href="nutritionpomerenian.html">Pomerenian</a>
+                                           <a class="dropdown-item" href="nutritionboxer.html">Boxer</a>
+                                           
+                                           
+                                      
+                                   </li>
+                                   <li class="nav-item dropdown">
+                                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Country</a>
+                                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                           <a class="dropdown-item" href="nutritionlab.html">Canada</a>
+                                           <a class="dropdown-item" href="nutritiongerman.html">Germany</a>
+                                           <a class="dropdown-item" href="nutritionpomerenian.html">Poland</a>
+                                        <a class="nav-link dropdown-toggle"  role="button" data-toggle="dropdown" href="menu.html">United Kingdom</a>
+                                               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                   <a class="dropdown-item" href="beagle.html">Beagle</a>
+                                                   <a class="dropdown-item" href="nutritiongolden.html">Golden Retriever</a>
+                                               </div>
+                                           <a class="dropdown-item" href="nutritionpug.html">China</a>
+                                           <a class="dropdown-item" href="nutritionsamoyed.html">Siberia</a>
+                                           <a class="dropdown-item" href="nutritionwhoodle.html">USA</a>
+                                           <a class="dropdown-item" href="nutritionboxer.html">England</a>
+                                           
+                                       </div>
+                                   </li>
+                                   
+                               </div>
+                                   
+                                   </li>
+                               </ul>
+                               <!-- Search Btn -->
+                               <div class="caviar-search-btn">
+                                   <a id="search-btn" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                               </div>
+                           </div>
+                       </nav>
+                   </div>
+               </div>
+           </div>
+       </header>
+</head>
+<body>
+
+    <section class="ftco-section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 ftco-animate">
+                    <div class="staff">
+                        <div class="img-wrap d-flex align-items-stretch">
+                            <div class="img align-self-stretch" style="background-image: url(./img/vet/staff-1.jpg);"></div>
+                        </div>
+                        <div class="text pt-3 px-3 pb-4 text-center">
+                            <h3>Lloyd Wilson</h3>
+                            <span class="position mb-2">Health Coach</span>
+                            <div class="faded">
+                                <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                                
+              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 ftco-animate">
+                    <div class="staff">
+                        <div class="img-wrap d-flex align-items-stretch">
+                            <div class="img align-self-stretch" style="background-image: url(./img/vet/staff-2.jpg);"></div>
+                        </div>
+                        <div class="text pt-3 px-3 pb-4 text-center">
+                            <h3>Rachel Parker</h3>
+                            <span class="position mb-2">Life &amp; Business Coach</span>
+                            <div class="faded">
+                                <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                               
+              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 ftco-animate">
+                    <div class="staff">
+                        <div class="img-wrap d-flex align-items-stretch">
+                            <div class="img align-self-stretch" style="background-image: url(./img/vet/staff-3.jpg);"></div>
+                        </div>
+                        <div class="text pt-3 px-3 pb-4 text-center">
+                            <h3>Ian Smith</h3>
+                            <span class="position mb-2">Executive Coach</span>
+                            <div class="faded">
+                                <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                              
+              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 ftco-animate">
+                    <div class="staff">
+                        <div class="img-wrap d-flex align-items-stretch">
+                            <div class="img align-self-stretch" style="background-image: url(./img/vet/staff-4.jpg);"></div>
+                        </div>
+                        <div class="text pt-3 px-3 pb-4 text-center">
+                            <h3>Alicia Henderson</h3>
+                            <span class="position mb-2">Health Coach</span>
+                            <div class="faded">
+                                <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                              
+              </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 ftco-animate">
+                    <div class="staff">
+                        <div class="img-wrap d-flex align-items-stretch">
+                            <div class="img align-self-stretch" style="background-image: url(./img/vet/staff-5.jpg);"></div>
+                        </div>
+                        <div class="text pt-3 px-3 pb-4 text-center">
+                            <h3>Lloyd Wilson</h3>
+                            <span class="position mb-2">Executive Coach</span>
+                            <div class="faded">
+                                <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                              
+              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 ftco-animate">
+                    <div class="staff">
+                        <div class="img-wrap d-flex align-items-stretch">
+                            <div class="img align-self-stretch" style="background-image: url(./img/vet/staff-6.jpg);"></div>
+                        </div>
+                        <div class="text pt-3 px-3 pb-4 text-center">
+                            <h3>Rachel Parker</h3>
+                            <span class="position mb-2">Health Coach</span>
+                            <div class="faded">
+                                <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                              
+              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 ftco-animate">
+                    <div class="staff">
+                        <div class="img-wrap d-flex align-items-stretch">
+                            <div class="img align-self-stretch" style="background-image: url(./img/vet/staff-7.jpg);"></div>
+                        </div>
+                        <div class="text pt-3 px-3 pb-4 text-center">
+                            <h3>Ian Smith</h3>
+                            <span class="position mb-2">Health Coach</span>
+                            <div class="faded">
+                                <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                               
+              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 ftco-animate">
+                    <div class="staff">
+                        <div class="img-wrap d-flex align-items-stretch">
+                            <div class="img align-self-stretch" style="background-image: url(./img/vet/staff-8.jpg);"></div>
+                        </div>
+                        <div class="text pt-3 px-3 pb-4 text-center">
+                            <h3>Fred Henderson</h3>
+                            <span class="position mb-2">Executive Coach</span>
+                            <div class="faded">
+                                <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                               
+              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+              
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/jquery.timepicker.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+<script src="js/google-map.js"></script>
+<script src="js/main.js"></script>
+
+    
+</body>
+</html>

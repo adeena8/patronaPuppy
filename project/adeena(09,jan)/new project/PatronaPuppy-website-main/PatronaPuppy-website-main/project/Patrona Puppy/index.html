@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <!-- Title -->
+     <title>PATRONA PUPPY</title>
+
+     <!-- Favicon -->
+     <link rel="icon" href="img/logo.png">
+ 
+     <!-- Core Stylesheet -->
+     <link href="style2.css" rel="stylesheet">
+     <link href="style_index.css" rel="stylesheet">
+     <!-- Responsive CSS -->
+     <link href="css/responsive/responsive.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+     <!-- Optional theme -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+     
+     <!-- Latest compiled and minified JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+    
+     <style>
+          body{
+              background-color: #363535a4;
+          }
+ .blink{
+     color:bisque;
+     text-decoration: underline
+ }
+ @media 
+only screen and (max-width: 1000px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+}
+     </style>
+</head>
+<body>
+      <!-- ***** Search Form Area ***** -->
+      <div class="caviar-search-form d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="search-close-btn" id="closeBtn">
+                            <i class="pe-7s-close-circle" aria-hidden="true"></i>
+                        </div>
+                        <form action="#" method="get">
+                            <input type="search" name="caviarSearch" id="search" placeholder="Search Here anything...">
+                            <input type="submit" class="d-none" value="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- ***** Header Area Start ***** -->
+        <header class="header_area" id="header">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-12 h-100">
+                        <nav class="h-100 navbar navbar-expand-lg align-items-center">
+                            <a class="navbar-brand" href="index.html"><img src="logo.png" alt="" width="100px">PATRONA PUPPY</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#caviarNav" aria-controls="caviarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
+                            <div class="collapse navbar-collapse" id="caviarNav">
+                                <ul class="navbar-nav ml-auto" id="caviarMenu">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#about">About Us</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#blogs">Blogs</a>
+                                    </li>
+                                    <li class="nav-item">
+                                            <a class="nav-link" href="#breed">Popular Breeeds</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="gallery.html">Gallery</a>
+                                </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="FAQ.html">FAQ</a>
+                                </li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="adeena.html">vet</a>
+                        </li>
+                                   
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Breeds</a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="beagle.html">Beagle</a>
+                                            <a class="dropdown-item" href="nutritiongerman.html">German Shepherd</a>
+                                            <a class="dropdown-item" href="nutritionlab.html">Labrador Retriever</a>
+                                            <a class="dropdown-item" href="nutritiongolden.html">Golden Retriever</a>
+                                            <a class="dropdown-item" href="nutritionpug.html">Pug</a>
+                                            <a class="dropdown-item" href="nutritionsamoyed.html">Samoyed</a>
+                                            <a class="dropdown-item" href="nutritionwhoodle.html">Whoodle</a>
+                                            <a class="dropdown-item" href="nutritionpomerenian.html">Pomerenian</a>
+                                            <a class="dropdown-item" href="nutritionboxer.html">Boxer</a>
+                                            
+                                            
+                                       
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Country</a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="nutritionlab.html">Canada</a>
+                                            <a class="dropdown-item" href="nutritiongerman.html">Germany</a>
+                                            <a class="dropdown-item" href="nutritionpomerenian.html">Poland</a>
+                                         <a class="nav-link dropdown-toggle"  role="button" data-toggle="dropdown" href="menu.html">United Kingdom</a>
+                                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <a class="dropdown-item" href="beagle.html">Beagle</a>
+                                                    <a class="dropdown-item" href="nutritiongolden.html">Golden Retriever</a>
+                                                </div>
+                                            <a class="dropdown-item" href="nutritionpug.html">China</a>
+                                            <a class="dropdown-item" href="nutritionsamoyed.html">Siberia</a>
+                                            <a class="dropdown-item" href="nutritionwhoodle.html">USA</a>
+                                            <a class="dropdown-item" href="nutritionboxer.html">England</a>
+                                            
+                                        </div>
+                                    </li>
+                                    
+                                </div>
+                                    
+                                    </li>
+                                </ul>
+                                <!-- Search Btn -->
+                                <div class="caviar-search-btn">
+                                    <a id="search-btn" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ***** Header Area End ***** -->
+  
+    <!-- quotation-->
+    <div class="row">
+    <div style="width:100%">
+        <img src="./img/winter.jfif" width=100% height=300px class="img-responsive"/>
+</div>
+</div>
+    <!-- --- -->
+
+      <!-- about us-->
+     
+      <div class="row h-100" id="tab2">
+                
+            <h2 title="About us" class="abtu col-md-12 col-xs-12 col-s-12 col-xl-12" id="about"  >ABOUT US</h2>
+            <div class="row">
+            <div class="col-md-4 col-xl-4"></div>
+            <hr class="col-md-4 col-xs-12 col-xl-4">
+            <div class="col-md-2 col-xl-2"></div>
+            <div class="col-md-2 col-xl-2"></div>
+            <p class="abt col-md-8 col-xs-12 col-xl-8">
+            <b > The PATRONA puppy website is a website which is actually encyclopedia about all types of dogs.
+             The Famous Veteran Patrona is fond of animals specially Dogs, Cats, Rabbits. With her achievements in 
+             the field of serving as veteran, she also had interest in writing books on animals and their behavior. 
+             All those years she had came across various type of breeds and their characteristics and behavior.
+             Due to passion of photography she has huge collection of animals pictures of all types discovered.
+             Ms.Patrona wishes to share this images with all for which she decided to develop an website of dogs.</b>
+            </p>
+     </div>
+     <div class="col-md-2 col-xl-2"></div>
+
+  
+    </div>
+
+   
+      <!-- blogs -->
+      <div id="blogs">
+      <div class="container" id="cont">
+      <div class="row h-100" id="tab2" >
+            <h2 title="BLOGS" class="abtu col-md-12 col-xs-12 col-xl-12" >BLOGS</h2>
+                    <div class="row">
+                            <div class="col-md-4 col-md-4"></div>
+                            <hr class="col-md-4 col-xs-12 col-xl-4">
+                            <div class="col-md-5 col-xl-5">
+      </div>
+    <br>
+    <br>
+      <div class="row">
+        <div class="col-md-1 col-xl-1"></div>
+        <div class="col-md-3 col-xs-12 col-xl-3 blogs">
+<h2 style="font-family:segoe script" title="DOGS AND HUMANS" class="abtu">DOGS AND HUMANS</h2>
+<div class="row">
+        <div class="col-md-2 col-xl-2"></div>
+        <hr class="col-md-8 col-xs-12 col-xl-8">
+        <div class="col-md-2 col-xl-2"></div>
+    </div>
+<img src="img/dh.jpg" alt="image not found" class="bl2">
+<br><br>
+<p class="abt">  Dogs long association with humans has led dogs to be uniquely attuned to human behavior and they are able to 
+      thrive on a starch-rich diet that would be inadequate for other canid species. Dogs vary widely in shape, size 
+      and colors. </p>
+      <button type="button" class="btn btn-large btn-block btn-danger" id="btn"><a href="blog2.html" class="blink">READ MORE</a></button>
+      
+</div>
+
+<div class="col-md-1 col-xl-1"></div>
+<div class="col-md-3 col-xs-12 col-xl-3 blogs">
+    <h2 style="font-family:segoe script" title="Dogs as intelligent as two-year-old children"  class="abtu">Dogs as intelligent as two-year-old children</h2>
+    <div class="row">
+            <div class="col-md-2 col-xl-2"></div>
+            <hr class="col-md-8 col-xs-12 col-xl-8">
+            <div class="col-md-2 col-xl-2"></div>
+        </div>
+  <img src="img/dh2.jpg" alt="image not found" class="bl2">
+  <br><br>
+    <p  class="abt">Researchers have found that dogs are capable of understanding up to 250 words and gestures,
+       can count up to five and can perform simple mathematical  ...</p>
+       <button type="button" class="btn btn-large btn-block btn-danger" id="btn"><a href="blog1.html" class="blink">READ MORE</a></button>
+  </div>
+  
+  <div class="col-md-1 col-xl-1"></div>
+<div class="col-md-3 col-xs-12 col-xl-3 blogs">
+        <h2 style="font-family:segoe script" title="15 Amazing Dog Facts" class="abtu">10 Amazing Dog Facts</h2>
+        <div class="row">
+                <div class="col-md-2 col-xl-2"></div>
+                <hr class="col-md-8 col-xs-12 col-xl-8">
+                <div class="col-md-2 col-xl-2"></div>
+            </div>
+      <img src="img/dh3.jpg" alt="image not found" class="bl2">
+      <br><br>
+        <ul  class="abt">
+            <li> -Dogs noses are wet to help absorb scent chemicals</li>
+            <li> -A Bloodhound’s sense of smell can be used as evidence in court</li>
+            <li> -The tallest dog in the world is 44 inches tall</li>
+            <li> -30% of Dalmatians are deaf in one ear</li>
+            <li> -Basenji dogs don’t bark, they yodel</li>
+            <!-- <li> -The African Hunting dog is the most successful hunter in the world</li> -->
+        </ul>
+        <br>
+        <button type="button" class="btn btn-large btn-block btn-danger" id="btn"><a href="blog3.html" class="blink">READ MORE</a></button>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- Popular breeds-->
+<div id="breed">
+    <div class="container">
+
+        <div class="row h-100" id="tab2" >
+                <h2 title="MOST POPULAR BREEDS" class="abtu col-md-12 col-xs-12 col-xl-12">MOST POPULAR BREEDS</h2>
+                        <div class="row">
+                                <div class="col-md-3 col-xl-3"></div>
+                                <hr class="col-md-6 col-xs-12 col-xl-6">
+                                <div class="col-md-3 col-xl-3">
+          </div>
+        <div class="tables">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>DOG BREEDS</th>
+                <th>POPULARITY</th>
+                <th>TEMPERAMENT</th>
+                <th>HYPOALLERGENIC</th>
+                <th>INTELLIGENCE</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="img/t1.jpg" alt="Image not found" width=20%/> 
+                <h4>Labrador Retriever</h4>
+                <h5>Purebred</h5>
+                Origin:Canada
+              </td>
+                <td><h2>1</h2>
+                    <h5>Rank</h5></td>
+                <td><h5>
+                    Cheerful<br>
+                    Gentle <br>
+                    Friendly<br>
+                    Intelligent<br>
+                    ...
+                </h5></td>
+                <td> <h2 class="no">NO</h2></td>
+                <td>
+                    <h2>7</h2>
+                    <h5>Rank</h5>
+                </td>
+              </tr>
+        
+        
+              <tr>
+                  <td><img src="img/t2.jpg" alt="Image not found" width=20%/> 
+                  <h4>German Shepherd
+                  </h4>
+                  <h5>Purebred</h5>
+                  Origin:Germany
+                </td>
+                  <td><h2>2</h2>
+                      <h5>Rank</h5></td>
+                  <td><h5>
+                      Courageous<br>
+                      Intelligent<br>
+                      Loyal<br>
+                      Watchfult<br>
+                      ...
+                  </h5></td>
+                  <td> <h2 class="no">NO</h2></td>
+                  <td>
+                      <h2>3</h2>
+                      <h5>Rank</h5>
+                  </td>
+                </tr>
+        
+        
+        
+                <tr>
+                    <td><img src="img/t3.jpg" alt="Image not found" width=20%/> 
+                    <h4>Golden Retriever</h4>
+                    <h5>Purebred</h5>
+                    Origin:United Kingdom
+                  </td>
+                    <td><h2>3</h2>
+                        <h5>Rank</h5></td>
+                    <td><h5>
+                        Intelligent<br>
+                        Kind<br>
+                        Friendly<br>
+                        Confident<br>
+                        ...
+                    </h5></td>
+                    <td> <h2 class="no">NO</h2></td>
+                    <td>
+                        <h2>4</h2>
+                        <h5>Rank</h5>
+                    </td>
+                  </tr>
+        
+        
+                  <tr>
+                      <td><img src="img/t4.jpg" alt="Image not found" width=20%/> 
+                      <h4>French Bulldog</h4>
+                      <h5>Purebred</h5>
+                      Origin:France UK
+                    </td>
+                      <td><h2>4</h2>
+                          <h5>Rank</h5></td>
+                      <td><h5>
+                          Playful<br>
+                          Sociable<br>
+                          Lively<br>
+                          Patient<br>
+                          ...
+                      </h5></td>
+                      <td> <h2 class="no">NO</h2></td>
+                      <td>
+                          <h2>58</h2>
+                          <h5>Rank</h5>
+                      </td>
+                    </tr>
+        
+        
+                    <tr>
+                        <td><img src="img/t5.jpg" alt="Image not found" width=20%/> 
+                        <h4>Bulldog</h4>
+                        <h5>Purebred</h5>
+                        Origin:United Kingdom
+                      </td>
+                        <td><h2>5</h2>
+                            <h5>Rank</h5></td>
+                        <td><h5>
+                            Friendly<br>
+                            Docile<br>
+                            Willful<br>
+                            Gregarious<br>
+                            ...
+                        </h5></td>
+                        <td> <h2 class="no">NO</h2></td>
+                        <td>
+                            <h2>77</h2>
+                            <h5>Rank</h5>
+                        </td>
+                      </tr>
+        
+                      <tr>
+                          <td><img src="img/t6.jpg" alt="Image not found" width=20%/> 
+                          <h4>Beagle</h4>
+                          <h5>Purebred</h5>
+                          Origin:United Kingdom
+                        </td>
+                          <td><h2>6</h2>
+                              <h5>Rank</h5></td>
+                          <td><h5>
+                              Gentle<br>
+                              Intelligent<br>
+                              Even Tempered<br>
+                              Determined<br>
+                              ...
+                          </h5></td>
+                          <td> <h2 class="no">NO</h2></td>
+                          <td>
+                              <h2>72</h2>
+                              <h5>Rank</h5>
+                          </td>
+                        </tr>
+        
+        
+                      
+                        <tr>
+                            <td><img src="img/t7.jpg" alt="Image not found" width=20%/> 
+                            <h4>Poodle</h4>
+                            <h5>Purebred</h5>
+                            Origin:Germany France
+                          </td>
+                            <td><h2>7</h2>
+                                <h5>Rank</h5></td>
+                            <td><h5>
+                                Intelligent<br>
+                                Faithful<br>
+                                Trainable<br>
+                                Instinctual<br>
+                                ...
+                            </h5></td>
+                            <td> <h2 class="yes">YES</h2></td>
+                            <td>
+                                <h2>2</h2>
+                                <h5>Rank</h5>
+                            </td>
+                          </tr>
+        
+                          <tr>
+                              <td><img src="img/t8.jpg" alt="Image not found" width=20%/> 
+                              <h4>Rottweiler</h4>
+                              <h5>Purebred</h5>
+                              Origin:Germany
+                            </td>
+                              <td><h2>8</h2>
+                                  <h5>Rank</h5></td>
+                              <td><h5>
+                                  Intelligent<br>
+                                  Courageous<br>
+                                  Fearless<br>
+                                  Confident<br>
+                                ...
+                              </h5></td>
+                              <td> <h2 class="no">NO</h2></td>
+                              <td>
+                                  <h2>9</h2>
+                                  <h5>Rank</h5>
+                              </td>
+                            </tr>
+        
+                            <tr>
+                                <td><img src="img/t9.jpg" alt="Image not found" width=20%/> 
+                                <h4>Yorkshire Terrier</h4>
+                                <h5>Purebred</h5>
+                                Origin:United Kingdom
+                              </td>
+                                <td><h2>9</h2>
+                                    <h5>Rank</h5></td>
+                                <td><h5>
+                                    Independent<br>
+                                    Intelligent<br>
+                                    Courageous<br>
+                                    Confident<br>
+                                  ...
+                                </h5></td>
+                                <td> <h2 class="no">NO</h2></td>
+                                <td>
+                                    <h2>27</h2>
+                                    <h5>Rank</h5>
+                                </td>
+                              </tr>
+        
+                              <tr>
+                                  <td><img src="img/t10.jpg" alt="Image not found" width=20%/> 
+                                  <h4>German Shorthaired Pointer</h4>
+                                  <h5>Purebred</h5>
+                                  Origin:Germany
+                                </td>
+                                  <td><h2>10</h2>
+                                      <h5>Rank</h5></td>
+                                  <td><h5>
+                                      Intelligent<br>
+                                      Trainable<br>
+                                      Boisterous<br>
+                                      Cooperative<br>
+                                    ...
+                                  </h5></td>
+                                  <td> <h2 class="no">NO</h2></td>
+                                  <td>
+                                      <h2>17</h2>
+                                      <h5>Rank</h5>
+                                  </td>
+                                </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+         <!-- footer-->
+         <div class="footer">
+                <hr>
+                <p  class="footer">Share this page with | <a href="https://www.facebook.com" target="_blank"><img src="img/face.jpg" width=2% height=3px /></a>
+                <a href="https://twitter.com" target="_blank"><img src="img/tw.png" width=2% height=3px /></a>
+                <a href="https://accounts.snapchat.com" target="_blank"><img src="img/sc.png" width=2% height=3px /></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="img/insta.png" width=2% height=3px /></a> </p>
+<p  class="footer">CopyRight © 2019 PatronaPuppy.info | patronaP@gmail.com <br>
+All images are the property of their respective owners. If you found any image copyrighted to yours, Please contact us, so we can remove it.</p>
+</div>
+</body>
+
+
+
+
+
+<script>
+        $(document).ready(function () {
+            $('#myCarousel').carousel({
+                interval: 10000
+            })
+            $('.fdi-Carousel .item').each(function () {
+                var next = $(this).next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+                next.children(':first-child').clone().appendTo($(this));
+        
+                if (next.next().length > 0) {
+                    next.next().children(':first-child').clone().appendTo($(this));
+                }
+                else {
+                    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+                }
+            });
+        });
+        </script>
+
+  <!-- Jquery-2.2.4 js -->
+  <script src="js/jquery/jquery-2.2.4.min.js"></script>
+  <!-- Popper js -->
+  <script src="js/bootstrap/popper.min.js"></script>
+  <!-- Bootstrap-4 js -->
+  <script src="js/bootstrap/bootstrap.min.js"></script>
+  <!-- All Plugins js -->
+  <script src="js/others/plugins.js"></script>
+   <!-- Active JS -->
+   <script src="js/active.js"></script>
+
+</html>

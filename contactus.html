@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PATRONA PUPPY</title>
+    <link href="style2.css" rel="stylesheet">
+    <link href="style_index.css" rel="stylesheet">
+    <!-- Responsive CSS -->
+    <link href="css/responsive/responsive.css" rel="stylesheet">
+   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ 
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+       
+   
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+        /* Contact Page Styles */
+        .contact-header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg,#474747a4, #232324);
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .contact-header h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .contact-header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+            color: white;
+        }
+
+        .contact-info {
+            color: white;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            animation: fadeInLeft 0.8s ease-out;
+        }
+
+        .info-card {
+            background: rgb(19, 19, 19);
+            color: rgb(255, 255, 255);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(77, 7, 174, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .info-card h3 {
+            color: #fffbfb;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info-card p {
+            color: #ffffff;
+            margin: 8px 0;
+            font-size: 1.1em;
+        }
+
+        .contact-form-container {
+            animation: fadeInRight 0.8s ease-out;
+        }
+
+        .contact-form {
+            background: rgb(37, 36, 37);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 500;
+            color: white;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color:#363535a4;
+            outline: none;
+        }
+
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .submit-button {
+            background:#4e4e4ea4;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+            width: 100%;
+        }
+
+        .submit-button:hover {
+            background:#250000a4;
+            transform: translateY(-2px);
+        }
+
+        .submit-button:active {
+            transform: translateY(0);
+        }
+
+       
+
+        
+
+        /* Social Links */
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+            justify-content: center;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
+           color:  rgb(172, 22, 11);
+            font-size: 1.2em;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-3px) scale(1.1);
+            background: #363535a4;
+            color: white;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info {
+                order: 2;
+            }
+
+            .contact-form-container {
+                order: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-header {
+                padding: 40px 20px;
+            }
+
+            .contact-header h1 {
+                font-size: 2em;
+            }
+
+            #contact-map {
+                height: 300px;
+            }
+
+            .info-card {
+                padding: 20px;
+            }
+        }
+        .fa {
+    padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;}
+
+    .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+footer{
+    background-color: rgb(50, 49, 49);
+    color: white;
+}
+h3{
+    color:white;
+    justify-content: center;
+}
+p{
+    color: white;
+}
+.adeena{
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="caviar-search-form d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="search-close-btn" id="closeBtn">
+                        <i class="pe-7s-close-circle" aria-hidden="true"></i>
+                    </div>
+                    <form action="#" method="get">
+                        <input type="search" name="caviarSearch" id="search" placeholder="Search Here anything...">
+                        <input type="submit" class="d-none" value="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header_area" id="header">
+     <div class="container h-100">
+         <div class="row h-100">
+             <!-- <div class="col-12 h-100"> -->
+                 <nav class="h-100 navbar navbar-expand-lg align-items-center">
+                     <a class="navbar-brand" href="index.html"><img src="logo.png" alt="" width="100px">PATRONA PUPPY</a>
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#caviarNav" aria-controls="caviarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
+                     <div class="collapse navbar-collapse" id="caviarNav">
+                         <ul class="navbar-nav ml-auto" id="caviarMenu">
+                             <li class="nav-item active">
+                                 <a class="nav-link" href="index.html">Home</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="#about">About Us</a>
+                             </li>
+
+                             <li class="nav-item">
+                                 <a class="nav-link" href="#blogs">Blogs</a>
+                             </li>
+                             <li class="nav-item">
+                                     <a class="nav-link" href="#breed">Popular Breeeds</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="gallery.html">Gallery</a>
+                         </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="FAQ.html">FAQ</a>
+                         </li>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="adeena.html">Veterinarian</a>
+                 </li>
+               
+               
+                            
+                             <li class="nav-item dropdown">
+                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Breeds</a>
+                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                     <a class="dropdown-item" href="beagle.html">Beagle</a>
+                                     <a class="dropdown-item" href="nutritiongerman.html">German Shepherd</a>
+                                     <!-- <a class="dropdown-item" href="nutritionlab.html">Labrador Retriever</a>
+                                     <a class="dropdown-item" href="nutritiongolden.html">Golden Retriever</a>
+                                     <a class="dropdown-item" href="nutritionpug.html">Pug</a> -->
+                                     <a class="dropdown-item" href="nutritionsamoyed.html">Samoyed</a>
+                                    
+                                     
+                                     
+                                
+                             </li>
+                             <li class="nav-item dropdown">
+                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Country</a>
+                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                   
+                                     <a class="dropdown-item" href="nutritiongerman.html">Germany</a>
+                                   
+                                  <a class="nav-link dropdown-toggle"  role="button" data-toggle="dropdown" href="menu.html">United Kingdom</a>
+                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                             <a class="dropdown-item" href="beagle.html">Beagle</a>
+                                             
+                                         </div>
+                                     
+                                     <a class="dropdown-item" href="nutritionsamoyed.html">Siberia</a>
+                                    
+                                     
+                                 </div>
+                             </li>
+                             
+                         </div>
+                             
+                             </li>
+                         </ul>
+                         <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                        
+                     </div>
+                 </nav>
+             </div>
+         </div>
+     </div>
+ </header> 
+
+
+    <main>
+        <section class="contact-header">
+            <h1>Get in Touch</h1>
+            <p>Have questions about our website or want to share your culinary experience? We'd love to hear from you!</p>
+        </section>
+
+        <section class="contact-container">
+            <div class="contact-info">
+                <div class="info-card">
+                    <h3><i class="fas fa-map-marker-alt"></i> Our Location</h3>
+                    <p>123 Street</p>
+                    
+                    <p>Bright City, SS 12345</p>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-phone-alt"></i> Phone</h3>
+                    <p>Main: +1 (555) 123-4567</p>
+                    <p>Support: +1 (555) 987-6543</p>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-envelope"></i> Email</h3>
+                    <p>info@patronapuppy.com</p>
+                    <p>support@puppies.com</p>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-clock"></i> Business Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <p>Saturday: 10:00 AM - 4:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name"> Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email"> Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject"> Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message"> Message</label>
+                        <textarea id="message" name="message" placeholder="Tell us what's on your mind..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+
+      
+    </main>
+
+     <!-- Footer! -->
+    <center>
+     <footer>
+        <div class="footer-content">
+            <br>
+            <br>
+            <br>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <!-- <div class="contact-info"> -->
+                    <p> +1 (555) 123-4567</p>
+                    <p> info@patronapuppy.com</p>
+                    <p> 123 Street, Puppy, FC 12345</p>
+                </div>
+                <div class="social-links">
+                    <!-- <div class="mt-4 md:mt-0 flex space-x-4"> -->
+                        <h3>Social Links</h3><br>
+                        <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                        <a href="https://twitter.com" class="fa fa-twitter"></a>
+                        <a href="https://www.google.com" class="fa fa-google"></a>
+                        <a href="https://ww.linkedin.com" class="fa fa-linkedin"></a>
+                        <a href="https://www.youtube.com" class="fa fa-youtube"></a>
+                        <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="adeena">HOME</a></li>
+                    <li><a href="blog1.html" class="adeena">BLOGS</a></li>
+                    <li><a href="gallery.html" class="adeena">GALLERY</a></li>
+                    <li><a href="FAQ.html" class="adeena">YOUR QUESTIONS</a></li>
+                    <li><a href="beagle.html" class="adeena">BREADS</a></li>
+                    <li><a href="adeena.html" class="adeena">VETERINARIAN</a></li>
+                    <li><a href="nutritiongerman.html" class="adeena">COUNTRY</a></li>
+
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p>Get ready to more updates for your puppies and tips delivered to your inbox weekly!</p>
+                <form class="subscribe-form" id="subscribe-form">
+                   
+                    <!-- <div class="input-group">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="subscribe-btn">
+                             Subscribe
+                        </button>
+                    </div> -->
+                
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Copyright 2025 All Right Reserved | AAHS</p>
+        </div>
+    </footer>
+</center>
+
+    <script src="js/click.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

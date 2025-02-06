@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>PATRONA PUPPY</title>
+
+   <!-- Core Stylesheet -->
+   <link href="style2.css" rel="stylesheet">
+   <link href="style_index.css" rel="stylesheet">
+   <!-- Responsive CSS -->
+   <link href="css/responsive/responsive.css" rel="stylesheet">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+   <!-- Optional theme -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+   
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      
+  
+   <style>
+    #add{
+        border-radius: 8px;
+       
+    }
+    #buy{
+        border-radius: 8px;
+    }
+        body{
+            background-color: #363535a4;
+        }
+.blink{
+   color:bisque;
+   text-decoration: underline
+}
+@media 
+only screen and (max-width: 1000px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr { 
+      display: block; 
+  }
+  
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr { 
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+  }
+}
+body{
+        background-color: rgb(31, 30, 30);
+        color: rgb(255, 255, 255);
+    }
+    h1{
+        color: rgb(255, 255, 255);
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .container{
+        color:rgb(239, 238, 238);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 7px;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+    .card{
+        border: 1px solid black;
+        padding: 8px;
+        margin: 5px;
+        background-color: rgb(145, 140, 140);
+        text-align: center;
+        border-radius: 8px;
+        width: 240px;
+        transition: transform 0.3 ease;
+        border:1px solid rgb(243, 244, 245);
+    }
+    .card:hover{
+        transform: translate(-7px);
+        box-shadow: 0 0 5px black; 
+        border:2px solid rgb(71, 71, 72);
+    }
+    .card img{
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 5%;
+    }
+    
+    /* .button{
+        display: block;
+        margin-top: 0 auto;
+        width: 200px;
+        padding: 7px;
+        background-color: rgb(72, 71, 71);
+        cursor: pointer;
+        border-radius: 50%;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    } */
+    .button {
+  background-color: #ff0000; /* Green */
+  /* border: none; */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+    button:hover{
+        background-color: rgb(34, 33, 33);
+        transform: scale(1.1 ,1);
+        color: white;
+    }
+    button#add{
+        margin-top: 10px;
+        margin-bottom: 5px
+    }
+    .footer{
+        background-color: black;
+        color: white;
+        display: block;
+        border: 1px solid black;
+        text-align: center;
+        width: 1350px;    
+        margin-top: 110px;
+    }
+    h3{
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+
+   
+   
+ 
+    </style>
+</head>
+<body>
+     <!-- ***** Search Form Area ***** -->
+     <div class="caviar-search-form d-flex align-items-center">
+           <div class="container">
+               <div class="row">
+                   <div class="col-12">
+                       <div class="search-close-btn" id="closeBtn">
+                           <i class="pe-7s-close-circle" aria-hidden="true"></i>
+                       </div>
+                       <form action="#" method="get">
+                           <input type="search" name="caviarSearch" id="search" placeholder="Search Here anything...">
+                           <input type="submit" class="d-none" value="submit">
+                       </form>
+                   </div>
+               </div>
+           </div>
+       </div>
+   
+       <!-- ***** Header Area Start ***** -->
+       <header class="header_area" id="header">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 h-100">
+                    <nav class="h-100 navbar navbar-expand-lg align-items-center">
+                        <a class="navbar-brand" href="index.html"><img src="logo.png" alt="" width="100px">PATRONA PUPPY</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#caviarNav" aria-controls="caviarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
+                        <div class="collapse navbar-collapse" id="caviarNav">
+                            <ul class="navbar-nav ml-auto" id="caviarMenu">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">About Us</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#blogs">Blogs</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="#breed">Popular Breeeds</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="gallery.html">Gallery</a>
+                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="FAQ.html">FAQ</a>
+                            </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="adeena.html">Veterinarian</a>
+                    </li>
+                   
+                               
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Breeds</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="beagle.html">Beagle</a>
+                                        <a class="dropdown-item" href="nutritiongerman.html">German Shepherd</a>
+                                        <!-- <a class="dropdown-item" href="nutritionlab.html">Labrador Retriever</a>
+                                        <a class="dropdown-item" href="nutritiongolden.html">Golden Retriever</a>
+                                        <a class="dropdown-item" href="nutritionpug.html">Pug</a> -->
+                                        <a class="dropdown-item" href="nutritionsamoyed.html">Samoyed</a>
+                                       
+                                        
+                                        
+                                   
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Country</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      
+                                        <a class="dropdown-item" href="nutritiongerman.html">Germany</a>
+                                      
+                                     <a class="nav-link dropdown-toggle"  role="button" data-toggle="dropdown" href="menu.html">United Kingdom</a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="beagle.html">Beagle</a>
+                                                
+                                            </div>
+                                        
+                                        <a class="dropdown-item" href="nutritionsamoyed.html">Siberia</a>
+                                       
+                                        
+                                    </div>
+                                </li>
+                                
+                            </div>
+                                
+                                </li>
+                            </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactus.html">Contact Us</a>
+                        </li>
+                            <!-- Search Btn -->
+                            <div class="caviar-search-btn">
+                                <a id="search-btn" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header> 
+<body>
+    <br>
+    <hr>
+    <br>
+
+    <div class="heading"></div>
+    <div class="container">
+        <h1>Famous Veterinarians Who Inspire Us To Do Good</h1>
+        <div class="card">
+            <h3>Dr. Saleem Qaiser</h3>
+            <br><img src="./img/vet/dr saleem.jpeg" alt="">
+            <p>An Australian veterinarian, television presenter, and author Dr. Saleem Qaiser is one of the best veterinary doctors in Lahore Pakistan</p>
+            <!-- <h3>Package 1</h3> -->
+            <button id="add"><b>Appointment</b></button>
+            <button id="buy"><b>Veiw details</b></button>
+        </div>
+        <div class="card">
+            <h3>Dr. Heather Wilson-Robles</h3>
+            <img src="./img/vet/Dr. Heather Wilson-Robles.jpg" alt="">
+            <!-- <h3>Package 2</h3> -->
+            <p>An associate professor of oncology at Texas A&M University who works as a clinical oncologist and scientist</p>
+            <button id="add"><b>Appointment</b></button>
+            <button id="buy"><b>Veiw details</b></button>
+        </div>
+        <div class="card">
+            <h3>Dr. Simon Doherty</h3>
+            <img src="./img/vet/dr.jpeg" alt="">
+            <!-- <h3>Package 3</h3> -->
+            <p>The 2024 World Vet of the Year, awarded by the World Veterinary Association .</p><br>
+            <br>
+            <button id="add"><b>Appointment</b></button>
+            <button id="buy"><b>Veiw details</b></button>
+        </div>
+        <div class="card">
+            <h3>Professor Fuller W. Bazer</h3>
+            <img src="./img/vet/w.webp" alt="">
+            <!-- <h3>Package 4</h3> -->
+            <p>A researcher at Texas A&M University who was ranked as one of the world's best animal science and veterinary scientists</p>
+            <button id="add"><b>Appointment</b></button>
+            <button id="buy"><b>Veiw details</b></button>
+        </div>
+        <div class="card">
+            <h3>John Rush</h3>
+            <img src="./img/vet/john.jpeg" alt="">
+            <!-- <h3>Package 5</h3> -->
+            <p>A diplomate of the American College of Veterinary Emergency and Critical Care (ACVECC)</p>
+            <button id="add"><b>Appointment</b></button>
+            <button id="buy"><b>Veiw details</b></button>
+        </div>
+    </div>
+</body>
+</html>
